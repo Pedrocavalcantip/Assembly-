@@ -21,3 +21,8 @@ saida :
     mov eax, 1                          ; syscall number for sys_exit
     mov ebx, 0                          ; exit code 0
     int 0x80                            ; call kernel to exit the program
+
+
+
+
+

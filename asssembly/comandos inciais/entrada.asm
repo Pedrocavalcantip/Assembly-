@@ -1,7 +1,7 @@
-segment . data ;parte de uma seção
+segment .data ;parte de uma seção
     LF              equ  0xA ;define a constante LF (Line Feed) como 0xA (10 em decimal)
     SYS_CALL        equ  0x80 ;define a constante SYS_CALL como 0x80 (128 em decimal, syscall para chamadas de sistema)
-    NULL            equ  0xD ;define a constante NULL como 0xD (13 em decimal, caractere de retorno de carro)
+    NULL            equ  0x0 ;define a constante NULL como 0xD (13 em decimal, caractere de retorno de carro)
     ; EAX
     SYS_EXIT        equ 0x1 ;define a constante SYS_EXIT como 0x1 (1 em decimal, syscall para sair do programa)
     SYS_READ        equ 0x3 ;define a constante SYS_READ como 0x3 (3 em decimal, syscall para ler da entrada padrão)
