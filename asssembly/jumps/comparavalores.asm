@@ -27,10 +27,10 @@ _start:
     mov ebx, DWORD [y]
 
     ;compara os valores de X e Y
-    cmp eax, ebx  ;compara os valores de eax e ebx
-    jge maior ;eax >=ebx
+    cmp eax, ebx            ;compara os valores de eax e ebx
 
-    mov ecx, msg2 ;se X for menor que Y, carrega msg2
+    jge maior               ;eax >=ebx
+    mov ecx, msg2           ;se X for menor que Y, carrega msg2
     mov edx, tam2
 
     jmp final
@@ -47,3 +47,5 @@ final:
     mov eax, SYS_EXIT
     xor ebx, RET_EXIT
     int SYS_CALL 
+
+
